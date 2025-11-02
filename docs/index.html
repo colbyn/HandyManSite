@@ -189,14 +189,19 @@
   }
   section.contact .contact-options > * {
   padding: 0.5rem 1rem;
-  background: #252525;
   border-radius: 0.5rem;
   border: 0.5px solid;
-  border-color: #4b4b4b;
+  background: #ffffff;
+  border-color: #ba00ff;
+  box-shadow: 0 0 2px 0px #000;
   }
   @media screen and (prefers-color-scheme: dark) {
   section.contact {
     background: #35193a;
+  }
+  section.contact .contact-options > * {
+    background: #252525;
+    border-color: #4b4b4b;
   }
   }
   </style>
@@ -225,7 +230,7 @@
     <div class="container" style="align-self: normal;">
       <p>Small fixes to complex projects. On time. Done right.</p>
       <div class="cta">
-        <p><a href="#fragments.contact" class="btn btn-primary">Get a Free Estimate</a> <a href="sms:+10000000000"
+        <p><a href="#fragments--contact" class="btn btn-primary">Get a Free Estimate</a> <a href="sms:+10000000000"
         class="btn">Text Us</a></p>
       </div>
       <p class="subnote">Serving Cedar City, Enoch, Kanab, and nearby communities.</p>
@@ -287,7 +292,7 @@
   });
   });
   </script>
-  <section id="fragments.about" class="section about">
+  <section id="fragments--about" class="section about">
     <div class="container grid">
       <div>
         <h2>About</h2>
@@ -301,7 +306,7 @@
       </div>
     </div>
   </section>
-  <section id="fragments.services" class="section services">
+  <section id="fragments--services" class="section services">
     <div class="container">
       <h2>Services</h2>
       <p class="lead">Common tasks. Clear pricing. No job too small.</p>
@@ -343,7 +348,7 @@
       </details>
     </div>
   </section>
-  <section id="fragments.gallery" class="section gallery">
+  <section id="fragments--gallery" class="section gallery">
     <div class="container">
       <h2>Recent Projects</h2>
       <ul class="gallery-grid">
@@ -374,7 +379,7 @@
       </ul>
     </div>
   </section>
-  <section id="fragments.testimonials" class="section testimonials">
+  <section id="fragments--testimonials" class="section testimonials">
     <div class="container">
       <h2>Reviews</h2>
       <ul class="testimonial-list">
@@ -399,7 +404,7 @@
       </ul>
     </div>
   </section>
-  <section id="fragments.service-area" class="section service-area">
+  <section id="fragments--service-area" class="section service-area">
     <div class="container">
     <h2>Service Area</h2>
     <p>Based in Southern Utah. Regularly serving Cedar City, Enoch, Kanab, and nearby towns.</p><img src=
@@ -409,15 +414,13 @@
   <section id="fragments--contact" class="section contact">
     <div class="container grid">
       <h2>Get a Free Estimate</h2>
-      <div>
-        <p>Call, text, or send details. Fast response.</p>
-        <div class="contact-options">
-          <p><a class="btn btn-primary" href="tel:+1-000-000-0000">Call (000) 000-0000</a></p>
-          <p><a class="btn" href="sms:+10000000000">Text (000) 000-0000</a></p>
-          <p><a href="mailto:hello@example.com">hello@example.com</a></p>
-        </div>
-        <p class="micro">Hours: Mon–Sat · Evenings available</p>
+      <p>Call, text, or send details. Fast response.</p>
+      <div class="contact-options">
+        <p><a class="btn btn-primary" href="tel:+1-000-000-0000">Call (000) 000-0000</a></p>
+        <p><a class="btn" href="sms:+10000000000">Text (000) 000-0000</a></p>
+        <p><a href="mailto:hello@example.com">hello@example.com</a></p>
       </div>
+      <p class="micro">Hours: Mon–Sat · Evenings available</p>
     </div>
   </section>
   <footer class="fragments--site-footer">
