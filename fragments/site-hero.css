@@ -5,8 +5,9 @@
   background-size: cover;
   min-height: 100vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  align-items: normal;
+  justify-content: space-between;
+  padding: 10px;
 }
 
 
@@ -14,10 +15,9 @@
   background: #2525259e;
   backdrop-filter: blur(4px) contrast(.9);
   color: #ffce00;
-  padding: 20px;
+  padding: 10px;
   border: 1px solid #ffcc00;
-  border-radius: 10px;
-  margin: 20px;
+  border-radius: 3px;
 }
 
 #hero .container h1, #hero .container p {
@@ -25,8 +25,9 @@
 }
 
 #hero .container h1 {
-  font-weight: 900;
+  font-weight: 600;
   font-family: revert;
+  font-size: 2.2rem;
 }
 
 #hero .container a {
