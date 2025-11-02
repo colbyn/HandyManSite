@@ -3,15 +3,17 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 10%;
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #hero .container {
   background: #2525259e;
   backdrop-filter: blur(4px) contrast(.9);
   color: #ffce00;
-  padding: 50px 10px;
+  padding: 20px;
   border: 1px solid #fc0;
   border-radius: 10px;
 }
