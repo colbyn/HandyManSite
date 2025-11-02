@@ -109,6 +109,11 @@
     box-shadow: none;
     border-color: #262626;
   }
+  .fragment--site-header nav .menu-toggle {
+    background: #242424;
+    box-shadow: none;
+    border-color: #000000;
+  }
   }
   </style>
   <style>
@@ -180,6 +185,21 @@
   }
   }
   </style>
+  <style>
+  .fragments--site-footer {
+  padding: 2rem;
+  }
+
+  .fragments--site-footer p {
+  text-align: center;
+  }
+
+  .fragments--site-footer .container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  }
+  </style>
 </head>
 <body>
   <link rel="stylesheet" type="text/css" href="fragments/site-hero.css">
@@ -223,11 +243,24 @@
     </nav>
   </header>
   <script>
-  document.querySelector('.menu-toggle').addEventListener('click', function() {
-  const nav = document.querySelector('#menu');
-  nav.classList.toggle('open');
-  this.setAttribute('aria-expanded', nav.classList.contains('open'));
+
+  document.addEventListener("DOMContentLoaded", function() {
+  const button = document.querySelector('.menu-toggle');
+  button.addEventListener('click', function() {
+    const nav = document.querySelector('#menu');
+    nav.classList.toggle('open');
+    button.setAttribute('aria-expanded', nav.classList.contains('open'));
   });
+  document.querySelectorAll('#menu a').forEach(function(a) {
+    a.addEventListener('click', function() {
+      // const isExpanded = button.getAttribute("aria-expanded");
+      const nav = document.querySelector('#menu');
+      nav.classList.toggle('open');
+      button.setAttribute('aria-expanded', nav.classList.contains('open'));
+    });
+  });
+  });
+
   </script>
   <section id="fragments.about" class="section about">
     <div class="container grid">
@@ -369,7 +402,7 @@
       </form>
     </div>
   </section>
-  <footer class="fragments.site-footer">
+  <footer class="fragments--site-footer">
     <div class="container">
       <p><strong>[Business Name]</strong> · Handyman Services · Southern Utah</p>
       <p class="micro">© 2025 [Business Name]. All rights reserved. <span aria-hidden="true">·</span> <a href=

@@ -102,13 +102,31 @@ html {
     box-shadow: none;
     border-color: #262626;
   }
+  .fragment--site-header nav .menu-toggle {
+    background: #242424;
+    box-shadow: none;
+    border-color: #000000;
+  }
 }
 </style>
 
 <script>
-document.querySelector('.menu-toggle').addEventListener('click', function() {
-  const nav = document.querySelector('#menu');
-  nav.classList.toggle('open');
-  this.setAttribute('aria-expanded', nav.classList.contains('open'));
+  
+document.addEventListener("DOMContentLoaded", function() {
+  const button = document.querySelector('.menu-toggle');
+  button.addEventListener('click', function() {
+    const nav = document.querySelector('#menu');
+    nav.classList.toggle('open');
+    button.setAttribute('aria-expanded', nav.classList.contains('open'));
+  });
+  document.querySelectorAll('#menu a').forEach(function(a) {
+    a.addEventListener('click', function() {
+      // const isExpanded = button.getAttribute("aria-expanded");
+      const nav = document.querySelector('#menu');
+      nav.classList.toggle('open');
+      button.setAttribute('aria-expanded', nav.classList.contains('open'));
+    });
+  });
 });
+
 </script>
