@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Colbyn's Site</title>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href=
+  "https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&amp;family=Source+Sans+3:ital,wght@0,200..900;1,200..900&amp;display=swap"
+  rel="stylesheet">
+  <style>
+    html {
+        box-sizing: border-box;
+    }
+    *, *:before, *:after {
+        box-sizing: inherit;
+    }
+  </style>
+  <script type="application/ld+json"></script>
+  <link rel="stylesheet" href="templates/default/typography.css">
+  <link rel="stylesheet" href="templates/default/layout.css">
+  <style>
+  html {
+  scroll-padding-top: 50px;
+  }
+
+  .fragment--site-header {
+  position: sticky;
+  top: 0;
+  background: #f8f8f8;
+  padding: 10px;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-color: #ffffff;
+  box-shadow: 0 1px 6px 0px #c1c1c1;
+  }  
+
+  .fragment--site-header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 10px;
+  }
+
+  .fragment--site-header nav ul.menu {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  padding: 0;
+  }
+
+  .fragment--site-header nav ul.menu li {
+  margin-bottom: 0;
+  }
+
+  .fragment--site-header a {
+  text-decoration: none;
+  }
+
+  .fragment--site-header nav .menu-toggle {
+  display: none;
+  background: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 10px;
+  background: #f4f4f4;
+  box-shadow: 0 0 2px 1px #c3c3c3;
+  border: 1px solid;
+  border-color: #fff;
+  }
+
+  .fragment--site-header nav ul.menu li.phone {
+  background: #ffffff;
+  border: 1px solid;
+  border-radius: 3px;
+  padding: 0px 10px;
+  box-shadow: 0 0 2px 1px #b3b3b3;
+  border-color: #fff;
+  text-align: center;
+  }
+
+  /* mobile */
+  @media (max-width: 768px) {
+  .fragment--site-header nav .menu-toggle {
+    display: block;
+  }
+  .fragment--site-header nav ul.menu {
+    flex-direction: column;
+    width: 100%;
+    display: none;
+  }
+  .fragment--site-header nav ul.menu.open {
+    display: flex;
+  }
+  }
+  </style>
+  <style>
+  section.about {
+  background: #b1ffa294;
+  padding: 50px 10px;
+  }
+  </style>
+  <style>
+  section.services {
+  background: #fffaa2b0;
+  padding: 50px 10px;
+  }
+  </style>
+  <style>
+  section.gallery {
+  background: #a2f8ffb0;
+  padding: 50px 10px;
+  }
+  </style>
+  <style>
+  section.testimonials {
+  background: #ffa2dcb0;
+  padding: 50px 10px;
+  }
+  </style>
+  <style>
+  section.service-area {
+  background: #ff898fb0;
+  padding: 50px 10px;
+  }
+  </style>
+  <style>
+  section.contact {
+  background: #ffa2eb5c;
+  padding: 50px 10px;
+  }
+  </style>
+</head>
+<body>
+  <link rel="stylesheet" type="text/css" href="fragments/site-hero.css">
+  <section id="hero" class="hero">
+    <img src="assets/tool-set-on-plank.jpeg" style="display: none;">
+    <div class="container">
+      <h1>Reliable Handyman in Southern Utah</h1>
+      <p>Small fixes to complex projects. On time. Done right.</p>
+      <div class="cta">
+        <p><a href="#contact" class="btn btn-primary">Get a Free Estimate</a> <a href="sms:+10000000000" class=
+        "btn">Text Us</a></p>
+      </div>
+      <p class="subnote">Serving Cedar City, Enoch, Kanab, and nearby communities.</p>
+    </div>
+  </section>
+  <header class="fragment--site-header">
+    <nav class="container" aria-label="Primary">
+      <a href="#hero" class="logo">[Business Name]</a> <button class="menu-toggle" aria-expanded="false" aria-controls=
+      "nav">☰</button>
+      <ul id="menu" class="menu">
+        <li>
+          <a href="#fragments.about">About</a>
+        </li>
+        <li>
+          <a href="#fragments.services">Services</a>
+        </li>
+        <li>
+          <a href="#fragments.gallery">Gallery</a>
+        </li>
+        <li>
+          <a href="#fragments.testimonials">Reviews</a>
+        </li>
+        <li class="btn">
+          <a href="#fragments.contact">Request a Quote</a>
+        </li>
+        <li class="phone">
+          <a href="tel:+1-000-000-0000">(000) 000-0000</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <script>
+  document.querySelector('.menu-toggle').addEventListener('click', function() {
+  const nav = document.querySelector('#menu');
+  nav.classList.toggle('open');
+  this.setAttribute('aria-expanded', nav.classList.contains('open'));
+  });
+  </script>
+  <hr>
+  <section id="fragments.about" class="section about">
+    <div class="container grid">
+      <div>
+        <h2>About</h2>
+        <p>Hi, I’m [Name]. I handle repairs, installs, and maintenance with a problem-solving mindset. Clear scope,
+        clean work, fair pricing.</p>
+        <ul class="bullets">
+          <li>[X]+ years experience</li>
+          <li>Locally owned, insured</li>
+          <li>Same-day quotes when possible</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section id="fragments.services" class="section services">
+    <div class="container">
+      <h2>Services</h2>
+      <p class="lead">Common tasks. Clear pricing. No job too small.</p>
+      <ul class="service-grid">
+        <li>
+          <h3>Home Repairs</h3>
+          <p>Doors, drywall, trim, caulking, fixtures.</p>
+        </li>
+        <li>
+          <h3>Installations</h3>
+          <p>Faucets, sinks, toilets, lighting, ceiling fans.</p>
+        </li>
+        <li>
+          <h3>Assembly</h3>
+          <p>Furniture, shelving, storage systems.</p>
+        </li>
+        <li>
+          <h3>Maintenance</h3>
+          <p>Gutters, paint touch-ups, weatherproofing.</p>
+        </li>
+        <li>
+          <h3>Exterior</h3>
+          <p>Fence repair, gate hardware, deck fixes.</p>
+        </li>
+        <li>
+          <h3>Odd Jobs</h3>
+          <p>TV mounting, hanging art, small punch lists.</p>
+        </li>
+      </ul>
+      <details class="fine-print">
+        <summary>
+          Notes
+        </summary>
+        <ul>
+          <li>Licensed and insured. Ask for COI if needed.</li>
+          <li>Materials billed at cost unless otherwise quoted.</li>
+          <li>Transparent estimates before work begins.</li>
+        </ul>
+      </details>
+    </div>
+  </section>
+  <section id="fragments.gallery" class="section gallery">
+    <div class="container">
+      <h2>Recent Projects</h2>
+      <ul class="gallery-grid">
+        <li>
+          <figure>
+            <img src="/fragments/gallery/deck-after.jpg" alt="Deck board replacement after photo">
+            <figcaption>
+              Deck board replacement — Cedar City
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="/fragments/gallery/faucet-after.jpg" alt="Kitchen faucet install after photo">
+            <figcaption>
+              Kitchen faucet install — Kanab
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="/fragments/gallery/drywall-after.jpg" alt="Drywall patch and paint after photo">
+            <figcaption>
+              Drywall patch + paint — Enoch
+            </figcaption>
+          </figure>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section id="fragments.testimonials" class="section testimonials">
+    <div class="container">
+      <h2>Reviews</h2>
+      <ul class="testimonial-list">
+        <li>
+          <blockquote>
+            <p>Showed up on time, explained options, and finished same day. Great work.</p>
+          </blockquote>
+          <p class="attribution">— M. L., Cedar City</p>
+        </li>
+        <li>
+          <blockquote>
+            <p>Fair price and neat cleanup. Our go-to for small repairs.</p>
+          </blockquote>
+          <p class="attribution">— R. S., Enoch</p>
+        </li>
+        <li>
+          <blockquote>
+            <p>Solved a tricky door issue another tech couldn’t fix.</p>
+          </blockquote>
+          <p class="attribution">— J. K., Kanab</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section id="fragments.service-area" class="section service-area">
+    <div class="container">
+    <h2>Service Area</h2>
+    <p>Based in Southern Utah. Regularly serving Cedar City, Enoch, Kanab, and nearby towns.</p><img src=
+    "/fragments/service-area/map.png" alt="Map highlighting Cedar City, Enoch, and Kanab service area" class=
+    "map"></div>
+  </section>
+  <section id="fragments.contact" class="section contact">
+    <div class="container grid">
+      <div>
+        <h2>Get a Free Estimate</h2>
+        <p>Call, text, or send details. Fast response.</p>
+        <p><a class="btn btn-primary" href="tel:+1-000-000-0000">Call (000) 000-0000</a></p>
+        <p><a class="btn" href="sms:+10000000000">Text (000) 000-0000</a></p>
+        <p><a href="mailto:hello@example.com">hello@example.com</a></p>
+        <p class="micro">Hours: Mon–Sat · Evenings available</p>
+      </div>
+      <form class="contact-form" action="/api/contact" method="post" aria-label="Contact form">
+        <label><span>Name</span> <input type="text" name="name" autocomplete="name" required=""></label>
+        <label><span>Phone</span> <input type="tel" name="phone" autocomplete="tel" required=""></label>
+        <label><span>Email <span class="optional">(optional)</span></span> <input type="email" name="email"
+        autocomplete="email"></label> <label><span>Describe your job</span> 
+        <textarea name="message" rows="5" required=""></textarea></label> <button type="submit" class=
+        "btn btn-primary">Request Quote</button>
+        <p class="micro">By submitting you agree to be contacted about your request.</p>
+      </form>
+    </div>
+  </section>
+  <footer class="fragments.site-footer">
+    <div class="container">
+      <p><strong>[Business Name]</strong> · Handyman Services · Southern Utah</p>
+      <p class="micro">© 2025 [Business Name]. All rights reserved. <span aria-hidden="true">·</span> <a href=
+      "/privacy.html">Privacy</a> <span aria-hidden="true">·</span> <a href="/terms.html">Terms</a> <span aria-hidden=
+      "true">·</span> Licensed & Insured</p>
+    </div>
+  </footer>
+</body>
+</html>
