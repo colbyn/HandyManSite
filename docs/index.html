@@ -97,11 +97,30 @@
     display: flex;
   }
   }
+
+  @media screen and (prefers-color-scheme: dark) {
+  .fragment--site-header {
+    background: #323232;
+    border-color: #000000;
+    box-shadow: none;
+  }
+  .fragment--site-header nav ul.menu li.phone {
+    background: #414141;
+    box-shadow: none;
+    border-color: #262626;
+  }
+  }
   </style>
   <style>
   section.about {
   background: #b1ffa294;
   padding: 50px 10px;
+  }
+
+  @media screen and (prefers-color-scheme: dark) {
+  section.about {
+    background: #37aa28bd;
+  }
   }
   </style>
   <style>
@@ -109,11 +128,23 @@
   background: #fffaa2b0;
   padding: 50px 10px;
   }
+
+  @media screen and (prefers-color-scheme: dark) {
+  section.services {
+    background: #a87d00;
+  }
+  }
   </style>
   <style>
   section.gallery {
   background: #a2f8ffb0;
   padding: 50px 10px;
+  }
+
+  @media screen and (prefers-color-scheme: dark) {
+  section.gallery {
+    background: #00909c;
+  } 
   }
   </style>
   <style>
@@ -121,17 +152,32 @@
   background: #ffa2dcb0;
   padding: 50px 10px;
   }
+  @media screen and (prefers-color-scheme: dark) {
+  section.testimonials {
+    background: #923d7c;
+  }
+  }
   </style>
   <style>
   section.service-area {
   background: #ff898fb0;
   padding: 50px 10px;
   }
+  @media screen and (prefers-color-scheme: dark) {
+  section.service-area {
+    background: #da6167;
+  } 
+  }
   </style>
   <style>
   section.contact {
   background: #ffa2eb5c;
   padding: 50px 10px;
+  }
+  @media screen and (prefers-color-scheme: dark) {
+  section.contact {
+    background: #35193a;
+  }
   }
   </style>
 </head>
