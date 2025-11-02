@@ -243,7 +243,6 @@
     </nav>
   </header>
   <script>
-
   document.addEventListener("DOMContentLoaded", function() {
   const button = document.querySelector('.menu-toggle');
   button.addEventListener('click', function() {
@@ -253,14 +252,25 @@
   });
   document.querySelectorAll('#menu a').forEach(function(a) {
     a.addEventListener('click', function() {
-      // const isExpanded = button.getAttribute("aria-expanded");
       const nav = document.querySelector('#menu');
-      nav.classList.toggle('open');
-      button.setAttribute('aria-expanded', nav.classList.contains('open'));
+      const isExpanded = nav.classList.contains('open');
+      if (isExpanded) {
+        nav.classList.toggle('open');
+        button.setAttribute('aria-expanded', nav.classList.contains('open'));
+      }
+    });
+  });
+  document.querySelectorAll('.fragment--site-header nav > a.logo').forEach(function(a) {
+    a.addEventListener('click', function() {
+      const nav = document.querySelector('#menu');
+      const isExpanded = nav.classList.contains('open');
+      if (isExpanded) {
+        nav.classList.toggle('open');
+        button.setAttribute('aria-expanded', nav.classList.contains('open'));
+      }
     });
   });
   });
-
   </script>
   <section id="fragments.about" class="section about">
     <div class="container grid">
