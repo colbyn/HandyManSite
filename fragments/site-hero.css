@@ -13,7 +13,7 @@
 
 
 #hero .container {
-  background: #2525259e;
+  background: linear-gradient(to bottom, rgb(126 125 125 / 53%) 0%, rgb(14 14 14 / 60%) 100%);
   backdrop-filter: blur(4px) contrast(.9);
   color: #ffce00;
   padding: 10px;
@@ -26,9 +26,10 @@
 }
 
 #hero .container h1 {
-  font-weight: 600;
+  font-weight: 500;
   font-family: revert;
   font-size: 2.2rem;
+  text-transform: uppercase;
 }
 
 #hero .container a {
