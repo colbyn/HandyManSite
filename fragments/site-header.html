@@ -1,0 +1,104 @@
+<header class="fragment--site-header">
+  <nav class="container" aria-label="Primary">
+    <a href="#hero" class="logo">[Business Name]</a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="nav">☰</button>
+    <ul id="menu" class="menu">
+      <li><a href="#fragments.about">About</a></li>
+      <li><a href="#fragments.services">Services</a></li>
+      <li><a href="#fragments.gallery">Gallery</a></li>
+      <li><a href="#fragments.testimonials">Reviews</a></li>
+      <li class="btn"><a href="#fragments.contact">Request a Quote</a></li>
+      <li class="phone"><a href="tel:+1-000-000-0000">(000) 000-0000</a></li>
+    </ul>
+  </nav>
+</header>
+
+<style>
+html {
+  scroll-padding-top: 50px;
+}
+
+.fragment--site-header {
+  position: sticky;
+  top: 0;
+  background: #f8f8f8;
+  padding: 10px;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-color: #ffffff;
+  box-shadow: 0 1px 6px 0px #c1c1c1;
+}  
+
+.fragment--site-header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 10px;
+}
+
+.fragment--site-header nav ul.menu {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  padding: 0;
+}
+
+.fragment--site-header nav ul.menu li {
+  margin-bottom: 0;
+}
+
+.fragment--site-header a {
+  text-decoration: none;
+}
+
+.fragment--site-header nav .menu-toggle {
+  display: none;
+  background: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 10px;
+  background: #f4f4f4;
+  box-shadow: 0 0 2px 1px #c3c3c3;
+  border: 1px solid;
+  border-color: #fff;
+}
+
+.fragment--site-header nav ul.menu li.phone {
+  background: #ffffff;
+  border: 1px solid;
+  border-radius: 3px;
+  padding: 0px 10px;
+  box-shadow: 0 0 2px 1px #b3b3b3;
+  border-color: #fff;
+  text-align: center;
+}
+
+/* mobile */
+@media (max-width: 768px) {
+  .fragment--site-header nav .menu-toggle {
+    display: block;
+  }
+  .fragment--site-header nav ul.menu {
+    flex-direction: column;
+    width: 100%;
+    display: none;
+  }
+  .fragment--site-header nav ul.menu.open {
+    display: flex;
+  }
+}
+</style>
+
+<script>
+document.querySelector('.menu-toggle').addEventListener('click', function() {
+  const nav = document.querySelector('#menu');
+  nav.classList.toggle('open');
+  this.setAttribute('aria-expanded', nav.classList.contains('open'));
+});
+</script>
+
+
+<hr/>
