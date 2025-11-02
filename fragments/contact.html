@@ -1,34 +1,15 @@
-<section id="fragments.contact" class="section contact">
+<section id="fragments--contact" class="section contact">
   <div class="container grid">
+    <h2>Get a Free Estimate</h2>
     <div>
-      <h2>Get a Free Estimate</h2>
       <p>Call, text, or send details. Fast response.</p>
-      <p><a class="btn btn-primary" href="tel:+1-000-000-0000">Call (000) 000-0000</a></p>
-      <p><a class="btn" href="sms:+10000000000">Text (000) 000-0000</a></p>
-      <p><a href="mailto:hello@example.com">hello@example.com</a></p>
+      <div class="contact-options">
+        <p><a class="btn btn-primary" href="tel:+1-000-000-0000">Call (000) 000-0000</a></p>
+        <p><a class="btn" href="sms:+10000000000">Text (000) 000-0000</a></p>
+        <p><a href="mailto:hello@example.com">hello@example.com</a></p>
+      </div>
       <p class="micro">Hours: Mon–Sat · Evenings available</p>
     </div>
-
-    <form class="contact-form" action="/api/contact" method="post" aria-label="Contact form">
-      <label>
-        <span>Name</span>
-        <input type="text" name="name" autocomplete="name" required>
-      </label>
-      <label>
-        <span>Phone</span>
-        <input type="tel" name="phone" autocomplete="tel" required>
-      </label>
-      <label>
-        <span>Email <span class="optional">(optional)</span></span>
-        <input type="email" name="email" autocomplete="email">
-      </label>
-      <label>
-        <span>Describe your job</span>
-        <textarea name="message" rows="5" required></textarea>
-      </label>
-      <button type="submit" class="btn btn-primary">Request Quote</button>
-      <p class="micro">By submitting you agree to be contacted about your request.</p>
-    </form>
   </div>
 </section>
 
@@ -36,6 +17,21 @@
 section.contact {
   background: #ffa2eb5c;
   padding: 50px 10px;
+}
+section.contact .contact-options {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+  flex-wrap: wrap;
+}
+section.contact .contact-options > * {
+  padding: 0.5rem 1rem;
+  background: #252525;
+  border-radius: 0.5rem;
+  border: 0.5px solid;
+  border-color: #4b4b4b;
 }
 @media screen and (prefers-color-scheme: dark) {
   section.contact {
