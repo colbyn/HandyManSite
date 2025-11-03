@@ -34,7 +34,7 @@
   color: inherit;
 }
 
-@media (width <= 768px) {
+@media (width <= 1000px) {
   #hero {
     background-image: url("../assets/yellow-and-black-hand-tools-on-the-table.jpeg");
   }
