@@ -1,7 +1,7 @@
 /* === Font Stacks === */
 :root {
-    --font-serif: 'Playfair Display', Georgia, serif;
-    --font-sans: 'Inter', 'Source Sans 3', system-ui, sans-serif;
+    --font-headline: "Montserrat", sans-serif;
+    --font-body: "Open Sans", sans-serif;
     --font-mono: 'Source Code Pro', SFMono-Regular, Consolas, monospace;
 
     --text-base-size: 1rem;
@@ -17,7 +17,7 @@ html {
 body {
     margin: 0;
     padding: 0;
-    font-family: var(--font-sans);
+    font-family: var(--font-body);
     font-size: var(--text-base-size);
     line-height: var(--text-line-height);
     color: var(--text-color);
@@ -30,7 +30,7 @@ body {
 
 /* === Headings === */
 h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-serif);
+    font-family: var(--font-headline);
     font-weight: 600;
     line-height: 1.25;
     margin: 0;
@@ -68,7 +68,7 @@ p, ul, ol, dl, blockquote, pre, table, figure, fieldset, legend {
 }
 
 p {
-    font-family: var(--font-sans);
+    font-family: var(--font-body);
     text-align: justify;
     hyphens: auto;
 }
@@ -131,7 +131,7 @@ pre {
 table {
     width: 100%;
     border-collapse: collapse;
-    font-family: var(--font-sans);
+    font-family: var(--font-body);
     margin-bottom: 1.25rem;
 
     font-feature-settings: "tnum" 1, "lnum" 1;

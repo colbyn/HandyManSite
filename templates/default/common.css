@@ -1,17 +1,9 @@
 :root {
   /* PRIMARY */
-  --section-bg-gradient-primary-daytime: linear-gradient(
-    180deg,
-    hsl(180deg 100% 90%) 0%,
-    hsl(180deg 96% 90%) 20%,
-    hsl(180deg 92% 90%) 40%,
-    hsl(180deg 89% 90%) 60%,
-    hsl(180deg 85% 89%) 80%,
-    hsl(180deg 81% 89%) 100%
-  );
+  --section-bg-gradient-primary-daytime: linear-gradient(180deg, rgb(146 233 252 / 28%) 0%, rgb(132 210 247 / 42%) 100%);
   --section-bg-gradient-primary-nighttime: linear-gradient(180deg, rgb(57 66 68) 0%, rgb(44 45 52) 100%);
 
   /* SECONDARY */
-  --section-bg-gradient-secondary-daytime: linear-gradient(180deg, rgb(255 246 0 / 18%) 0%, rgb(255 223 135 / 44%) 100%);
+  --section-bg-gradient-secondary-daytime: linear-gradient(180deg, rgb(49 251 125 / 18%) 0%, rgb(135 255 155 / 44%) 100%);
   --section-bg-gradient-secondary-nighttime: linear-gradient(180deg, rgb(89 68 51) 0%, rgb(89 61 47) 100%);
 }

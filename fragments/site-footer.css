@@ -1,38 +1,36 @@
-#hero {
-  /* background-image: url(../assets/tool-set-on-plank.jpeg); */
-  /* background-image: url(../assets/yellow-and-black-hand-tools-on-the-table.jpeg); */
-  background-image: url(../assets/hand-tools-on-the-table.jpeg);
+.fragments--site-footer {
+  background-image: url(../assets/flat-lay-shot-of-tools.jpeg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 100vh;
+  min-height: 50vh;
   display: flex;
-  align-items: normal;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
   padding: 10px;
 }
 
 
-#hero .container {
+.fragments--site-footer .container {
   background: linear-gradient(to bottom, rgb(126 125 125 / 53%) 0%, rgb(14 14 14 / 60%) 100%);
   backdrop-filter: blur(4px) contrast(.9);
   color: #ffce00;
-  padding: 10px;
   border: 1px solid #ffcc00;
   border-radius: 3px;
+  padding: 5%;
 }
 
-#hero .container h1, #hero .container p {
+.fragments--site-footer .container h1, .fragments--site-footer .container p {
   text-align: center;
 }
 
-#hero .container h1 {
+.fragments--site-footer .container h1 {
   font-weight: 500;
   font-family: revert;
   font-size: 2.2rem;
   text-transform: uppercase;
 }
 
-#hero .container a {
+.fragments--site-footer .container a {
   color: inherit;
 }

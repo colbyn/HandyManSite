@@ -9,6 +9,9 @@
   <link href=
   "https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&amp;family=Source+Sans+3:ital,wght@0,200..900;1,200..900&amp;display=swap"
   rel="stylesheet">
+  <link href=
+  "https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&amp;family=Open+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap"
+  rel="stylesheet">
   <style>
     html {
         box-sizing: border-box;
@@ -21,6 +24,7 @@
   <link rel="stylesheet" href="templates/default/typography.css">
   <link rel="stylesheet" href="templates/default/layout.css">
   <link rel="stylesheet" href="templates/default/common.css">
+  <link rel="stylesheet" href="templates/default/paints.css">
   <style>
   html {
   scroll-padding-top: 50px;
@@ -124,6 +128,8 @@
   background: #b1ffa294;
   padding: 50px 10px;
   background: var(--section-bg-gradient-primary-daytime);
+  border-bottom: 1px solid;
+  border-color: #7f7f7f;
   }
 
   @media screen and (prefers-color-scheme: dark) {
@@ -136,6 +142,8 @@
   section.services {
   padding: 50px 10px;
   background: var(--section-bg-gradient-secondary-daytime);
+  border-bottom: 1px solid;
+  border-color: #7f7f7f;
   }
 
   @media screen and (prefers-color-scheme: dark) {
@@ -149,6 +157,8 @@
   background: #a2f8ffb0;
   padding: 50px 10px;
   background: var(--section-bg-gradient-primary-daytime);
+  border-bottom: 1px solid;
+  border-color: #7f7f7f;
   }
 
   @media screen and (prefers-color-scheme: dark) {
@@ -161,6 +171,8 @@
   section.testimonials {
   padding: 50px 10px;
   background: var(--section-bg-gradient-secondary-daytime);
+  border-bottom: 1px solid;
+  border-color: #7f7f7f;
   }
   @media screen and (prefers-color-scheme: dark) {
   section.testimonials {
@@ -173,6 +185,8 @@
   background: #ff898fb0;
   padding: 50px 10px;
   background: var(--section-bg-gradient-primary-daytime);
+  border-bottom: 1px solid;
+  border-color: #7f7f7f;
   }
   @media screen and (prefers-color-scheme: dark) {
   section.service-area {
@@ -184,6 +198,8 @@
   section.contact {
   padding: 50px 10px;
   background: var(--section-bg-gradient-secondary-daytime);
+  border-bottom: 1px solid;
+  border-color: #7f7f7f;
   }
   section.contact .contact-options {
   display: flex;
@@ -209,21 +225,6 @@
     background: #3f323263;
     border-color: #a1a1a1;
   }
-  }
-  </style>
-  <style>
-  .fragments--site-footer {
-  padding: 2rem;
-  }
-
-  .fragments--site-footer p {
-  text-align: center;
-  }
-
-  .fragments--site-footer .container {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
   }
   </style>
 </head>
@@ -429,6 +430,7 @@
       <p class="micro">Hours: Mon–Sat · Evenings available</p>
     </div>
   </section>
+  <link rel="stylesheet" type="text/css" href="fragments/site-footer.css">
   <footer class="fragments--site-footer">
     <div class="container">
       <p><strong>[Business Name]</strong> · Handyman Services · Southern Utah</p>
