@@ -36,3 +36,9 @@
 #hero .container a {
   color: inherit;
 }
+
+@media (max-width: 768px) {
+  #hero {
+    background-image: url(../assets/yellow-and-black-hand-tools-on-the-table.jpeg);
+  }
+}
