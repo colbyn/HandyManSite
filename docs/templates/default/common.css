@@ -5,5 +5,5 @@
 
   /* SECONDARY */
   --section-bg-gradient-secondary-daytime: linear-gradient(180deg, rgb(49 251 125 / 18%) 0%, rgb(135 255 155 / 44%) 100%);
-  --section-bg-gradient-secondary-nighttime: linear-gradient(180deg, rgb(89 68 51) 0%, rgb(89 61 47) 100%);
+  --section-bg-gradient-secondary-nighttime: linear-gradient(180deg, rgb(103 53 46) 0%, rgb(103 18 0) 100%);
 }
