@@ -1,0 +1,41 @@
+#hero {
+  background-image: url("../assets/yellow-and-black-hand-tools-on-the-table.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: normal;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+#hero .container {
+  background: linear-gradient(#7e7d7d87 0%, #0e0e0e99 100%);
+  backdrop-filter: blur(4px) contrast(.9);
+  color: #ffce00;
+  padding: 10px;
+  border: 1px solid #fc0;
+  border-radius: 3px;
+}
+
+#hero .container h1, #hero .container p {
+  text-align: center;
+}
+
+#hero .container h1 {
+  font-weight: 500;
+  font-family: revert;
+  font-size: 2.2rem;
+  text-transform: uppercase;
+}
+
+#hero .container a {
+  color: inherit;
+}
+
+@media (width <= 1000px) {
+  #hero {
+    background-image: url("../assets/yellow-and-black-hand-tools-on-the-table.jpeg");
+  }
+}

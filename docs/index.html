@@ -99,7 +99,7 @@
   border-color: #fff;
   }
 
-  .fragment--site-header nav ul.menu li.phone {
+  .fragment--site-header nav ul.menu li.phone, .fragment--site-header nav ul.menu li.btn {
   background: #ffffff;
   border: 1px solid;
   border-radius: 3px;
@@ -111,6 +111,9 @@
 
   /* mobile */
   @media (max-width: 768px) {
+  html {
+    scroll-padding-top: 70px;
+  }
   .fragment--site-header nav .menu-toggle {
     display: block;
   }
@@ -143,83 +146,6 @@
   }
   </style>
   <style>
-  section.about {
-  background: #b1ffa294;
-  padding: 50px 10px;
-  background: var(--section-bg-gradient-primary-daytime);
-  border-bottom: 1px solid;
-  border-color: #7f7f7f;
-  }
-
-  @media screen and (prefers-color-scheme: dark) {
-  section.about {
-    background: var(--section-bg-gradient-primary-nighttime);
-  }
-  }
-  </style>
-  <style>
-  section.services {
-  padding: 50px 10px;
-  background: var(--section-bg-gradient-secondary-daytime);
-  border-bottom: 1px solid;
-  border-color: #7f7f7f;
-  }
-
-  @media screen and (prefers-color-scheme: dark) {
-  section.services {
-    background: var(--section-bg-gradient-secondary-nighttime);
-  }
-  }
-  </style>
-  <style>
-  section.gallery {
-  background: #a2f8ffb0;
-  padding: 50px 10px;
-  background: var(--section-bg-gradient-primary-daytime);
-  border-bottom: 1px solid;
-  border-color: #7f7f7f;
-  }
-
-  @media screen and (prefers-color-scheme: dark) {
-  section.gallery {
-    background: var(--section-bg-gradient-primary-nighttime);
-  } 
-  }
-  </style>
-  <style>
-  section.testimonials {
-  padding: 50px 10px;
-  background: var(--section-bg-gradient-secondary-daytime);
-  border-bottom: 1px solid;
-  border-color: #7f7f7f;
-  }
-  @media screen and (prefers-color-scheme: dark) {
-  section.testimonials {
-    background: var(--section-bg-gradient-secondary-nighttime);
-  }
-  }
-  </style>
-  <style>
-  section.service-area {
-  background: #ff898fb0;
-  padding: 50px 10px;
-  background: var(--section-bg-gradient-primary-daytime);
-  border-bottom: 1px solid;
-  border-color: #7f7f7f;
-  }
-  @media screen and (prefers-color-scheme: dark) {
-  section.service-area {
-    background: var(--section-bg-gradient-primary-nighttime);
-  } 
-  }
-  </style>
-  <style>
-  section.contact {
-  padding: 50px 10px;
-  background: var(--section-bg-gradient-secondary-daytime);
-  border-bottom: 1px solid;
-  border-color: #7f7f7f;
-  }
   section.contact .contact-options {
   display: flex;
   gap: 1rem;
@@ -237,9 +163,6 @@
   box-shadow: 0 0 3px 0px #9c9c9c;
   }
   @media screen and (prefers-color-scheme: dark) {
-  section.contact {
-    background: var(--section-bg-gradient-secondary-nighttime);
-  }
   section.contact .contact-options > * {
     background: #00000063;
     border-color: #464646;
@@ -249,7 +172,8 @@
   </style>
 </head>
 <body>
-  <link rel="stylesheet" type="text/css" href="fragments/site-hero.css">
+  <link rel="stylesheet" type="text/css" href="pages/index.css">
+  <link rel="stylesheet" type="text/css" href="common/site-hero.css">
   <section id="hero" class="hero">
     <div class="container">
       <h1>Reliable Handyman in Southern Utah</h1>
@@ -269,19 +193,19 @@
       "nav">☰</button>
       <ul id="menu" class="menu">
         <li>
-          <a href="#fragments.about">About</a>
+          <a href="#fragments--about">About</a>
         </li>
         <li>
-          <a href="#fragments.services">Services</a>
+          <a href="#fragments--services">Services</a>
         </li>
         <li>
-          <a href="#fragments.gallery">Gallery</a>
+          <a href="#fragments--gallery">Gallery</a>
         </li>
         <li>
-          <a href="#fragments.testimonials">Reviews</a>
+          <a href="#fragments--testimonials">Reviews</a>
         </li>
         <li class="btn">
-          <a href="#fragments.contact">Request a Quote</a>
+          <a href="#fragments--contact">Request a Quote</a>
         </li>
         <li class="phone">
           <a href="tel:+1-000-000-0000">(000) 000-0000</a>
@@ -319,138 +243,140 @@
   });
   });
   </script>
-  <section id="fragments--about" class="section about">
-    <div class="container grid">
-      <div>
-        <h2>About</h2>
-        <p>Hi, I’m [Name]. I handle repairs, installs, and maintenance with a problem-solving mindset. Clear scope,
-        clean work, fair pricing.</p>
-        <ul class="bullets">
-          <li>[X]+ years experience</li>
-          <li>Locally owned, insured</li>
-          <li>Same-day quotes when possible</li>
+  <main>
+    <section id="fragments--about" class="section about">
+      <div class="container grid">
+        <div>
+          <h2>About</h2>
+          <p>Hi, I’m [Name]. I handle repairs, installs, and maintenance with a problem-solving mindset. Clear scope,
+          clean work, fair pricing.</p>
+          <ul class="bullets">
+            <li>[X]+ years experience</li>
+            <li>Locally owned, insured</li>
+            <li>Same-day quotes when possible</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="fragments--services" class="section services">
+      <div class="container">
+        <h2>Services</h2>
+        <p class="lead">Common tasks. Clear pricing. No job too small.</p>
+        <ul class="service-grid">
+          <li>
+            <h3>Home Repairs</h3>
+            <p>Doors, drywall, trim, caulking, fixtures.</p>
+          </li>
+          <li>
+            <h3>Installations</h3>
+            <p>Faucets, sinks, toilets, lighting, ceiling fans.</p>
+          </li>
+          <li>
+            <h3>Assembly</h3>
+            <p>Furniture, shelving, storage systems.</p>
+          </li>
+          <li>
+            <h3>Maintenance</h3>
+            <p>Gutters, paint touch-ups, weatherproofing.</p>
+          </li>
+          <li>
+            <h3>Exterior</h3>
+            <p>Fence repair, gate hardware, deck fixes.</p>
+          </li>
+          <li>
+            <h3>Odd Jobs</h3>
+            <p>TV mounting, hanging art, small punch lists.</p>
+          </li>
+        </ul>
+        <details class="fine-print">
+          <summary>
+            Notes
+          </summary>
+          <ul>
+            <li>Licensed and insured. Ask for COI if needed.</li>
+            <li>Materials billed at cost unless otherwise quoted.</li>
+            <li>Transparent estimates before work begins.</li>
+          </ul>
+        </details>
+      </div>
+    </section>
+    <section id="fragments--gallery" class="section gallery">
+      <div class="container">
+        <h2>Recent Projects</h2>
+        <ul class="gallery-grid">
+          <li>
+            <figure>
+              <img src="/fragments/gallery/deck-after.jpg" alt="Deck board replacement after photo">
+              <figcaption>
+                Deck board replacement — Cedar City
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="/fragments/gallery/faucet-after.jpg" alt="Kitchen faucet install after photo">
+              <figcaption>
+                Kitchen faucet install — Kanab
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="/fragments/gallery/drywall-after.jpg" alt="Drywall patch and paint after photo">
+              <figcaption>
+                Drywall patch + paint — Enoch
+              </figcaption>
+            </figure>
+          </li>
         </ul>
       </div>
-    </div>
-  </section>
-  <section id="fragments--services" class="section services">
-    <div class="container">
-      <h2>Services</h2>
-      <p class="lead">Common tasks. Clear pricing. No job too small.</p>
-      <ul class="service-grid">
-        <li>
-          <h3>Home Repairs</h3>
-          <p>Doors, drywall, trim, caulking, fixtures.</p>
-        </li>
-        <li>
-          <h3>Installations</h3>
-          <p>Faucets, sinks, toilets, lighting, ceiling fans.</p>
-        </li>
-        <li>
-          <h3>Assembly</h3>
-          <p>Furniture, shelving, storage systems.</p>
-        </li>
-        <li>
-          <h3>Maintenance</h3>
-          <p>Gutters, paint touch-ups, weatherproofing.</p>
-        </li>
-        <li>
-          <h3>Exterior</h3>
-          <p>Fence repair, gate hardware, deck fixes.</p>
-        </li>
-        <li>
-          <h3>Odd Jobs</h3>
-          <p>TV mounting, hanging art, small punch lists.</p>
-        </li>
-      </ul>
-      <details class="fine-print">
-        <summary>
-          Notes
-        </summary>
-        <ul>
-          <li>Licensed and insured. Ask for COI if needed.</li>
-          <li>Materials billed at cost unless otherwise quoted.</li>
-          <li>Transparent estimates before work begins.</li>
+    </section>
+    <section id="fragments--testimonials" class="section testimonials">
+      <div class="container">
+        <h2>Reviews</h2>
+        <ul class="testimonial-list">
+          <li>
+            <blockquote>
+              <p>Showed up on time, explained options, and finished same day. Great work.</p>
+            </blockquote>
+            <p class="attribution">— M. L., Cedar City</p>
+          </li>
+          <li>
+            <blockquote>
+              <p>Fair price and neat cleanup. Our go-to for small repairs.</p>
+            </blockquote>
+            <p class="attribution">— R. S., Enoch</p>
+          </li>
+          <li>
+            <blockquote>
+              <p>Solved a tricky door issue another tech couldn’t fix.</p>
+            </blockquote>
+            <p class="attribution">— J. K., Kanab</p>
+          </li>
         </ul>
-      </details>
-    </div>
-  </section>
-  <section id="fragments--gallery" class="section gallery">
-    <div class="container">
-      <h2>Recent Projects</h2>
-      <ul class="gallery-grid">
-        <li>
-          <figure>
-            <img src="/fragments/gallery/deck-after.jpg" alt="Deck board replacement after photo">
-            <figcaption>
-              Deck board replacement — Cedar City
-            </figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <img src="/fragments/gallery/faucet-after.jpg" alt="Kitchen faucet install after photo">
-            <figcaption>
-              Kitchen faucet install — Kanab
-            </figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <img src="/fragments/gallery/drywall-after.jpg" alt="Drywall patch and paint after photo">
-            <figcaption>
-              Drywall patch + paint — Enoch
-            </figcaption>
-          </figure>
-        </li>
-      </ul>
-    </div>
-  </section>
-  <section id="fragments--testimonials" class="section testimonials">
-    <div class="container">
-      <h2>Reviews</h2>
-      <ul class="testimonial-list">
-        <li>
-          <blockquote>
-            <p>Showed up on time, explained options, and finished same day. Great work.</p>
-          </blockquote>
-          <p class="attribution">— M. L., Cedar City</p>
-        </li>
-        <li>
-          <blockquote>
-            <p>Fair price and neat cleanup. Our go-to for small repairs.</p>
-          </blockquote>
-          <p class="attribution">— R. S., Enoch</p>
-        </li>
-        <li>
-          <blockquote>
-            <p>Solved a tricky door issue another tech couldn’t fix.</p>
-          </blockquote>
-          <p class="attribution">— J. K., Kanab</p>
-        </li>
-      </ul>
-    </div>
-  </section>
-  <section id="fragments--service-area" class="section service-area">
-    <div class="container">
-    <h2>Service Area</h2>
-    <p>Based in Southern Utah. Regularly serving Cedar City, Enoch, Kanab, and nearby towns.</p><img src=
-    "/fragments/service-area/map.png" alt="Map highlighting Cedar City, Enoch, and Kanab service area" class=
-    "map"></div>
-  </section>
-  <section id="fragments--contact" class="section contact">
-    <div class="container grid">
-      <h2>Get a Free Estimate</h2>
-      <p>Call, text, or send details. Fast response.</p>
-      <div class="contact-options">
-        <p><a class="btn btn-primary" href="tel:+1-000-000-0000">Call (000) 000-0000</a></p>
-        <p><a class="btn" href="sms:+10000000000">Text (000) 000-0000</a></p>
-        <p><a href="mailto:hello@example.com">hello@example.com</a></p>
       </div>
-      <p class="micro">Hours: Mon–Sat · Evenings available</p>
-    </div>
-  </section>
-  <link rel="stylesheet" type="text/css" href="fragments/site-footer.css">
+    </section>
+    <section id="fragments--service-area" class="section service-area">
+      <div class="container">
+      <h2>Service Area</h2>
+      <p>Based in Southern Utah. Regularly serving Cedar City, Enoch, Kanab, and nearby towns.</p><img src=
+      "/fragments/service-area/map.png" alt="Map highlighting Cedar City, Enoch, and Kanab service area" class=
+      "map"></div>
+    </section>
+    <section id="fragments--contact" class="section contact">
+      <div class="container grid">
+        <h2>Get a Free Estimate</h2>
+        <p>Call, text, or send details. Fast response.</p>
+        <div class="contact-options">
+          <p><a class="btn btn-primary" href="tel:+1-000-000-0000">Call (000) 000-0000</a></p>
+          <p><a class="btn" href="sms:+10000000000">Text (000) 000-0000</a></p>
+          <p><a href="mailto:hello@example.com">hello@example.com</a></p>
+        </div>
+        <p class="micro">Hours: Mon–Sat · Evenings available</p>
+      </div>
+    </section>
+  </main>
+  <link rel="stylesheet" type="text/css" href="common/site-footer.css">
   <footer class="fragments--site-footer">
     <div class="container">
       <p><strong>[Business Name]</strong> · Handyman Services · Southern Utah</p>

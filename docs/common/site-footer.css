@@ -1,0 +1,36 @@
+.fragments--site-footer {
+  background-image: url("../assets/flat-lay-shot-of-tools.jpeg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 50vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 10px;
+}
+
+.fragments--site-footer .container {
+  background: linear-gradient(#7e7d7d87 0%, #0e0e0e99 100%);
+  backdrop-filter: blur(4px) contrast(.9);
+  color: #ffce00;
+  border: 1px solid #fc0;
+  border-radius: 3px;
+  padding: 10px;
+  width: 100%;
+}
+
+.fragments--site-footer .container h1, .fragments--site-footer .container p {
+  text-align: center;
+}
+
+.fragments--site-footer .container h1 {
+  font-weight: 500;
+  font-family: revert;
+  font-size: 2.2rem;
+  text-transform: uppercase;
+}
+
+.fragments--site-footer .container a {
+  color: inherit;
+}
