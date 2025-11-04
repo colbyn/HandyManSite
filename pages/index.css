@@ -9,6 +9,8 @@ main>section > h2 {
     border-color: #ffffff;
     padding: 20px 10px;
     text-align: center;
+    color: #505050;
+    text-transform: uppercase;
 }
 main>section>.container{
     padding: 20px 10px;
