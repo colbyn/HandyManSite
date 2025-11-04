@@ -4,10 +4,14 @@ main {
     gap: 10px;
     padding: 10px;
 }
-main>section {
-    padding: 50px 10px;
-    border: 1px solid;
-    border-color: #7f7f7f;
+main>section > h2 {
+    border-bottom: 1px solid;
+    border-color: #ffffff;
+    padding: 20px 10px;
+    text-align: center;
+}
+main>section>.container{
+    padding: 20px 10px;
 }
 main>section:nth-child(even) {
     background: var(--section-bg-gradient-secondary-daytime);
