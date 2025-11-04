@@ -3,11 +3,11 @@
     <a href="#hero" class="logo">[Business Name]</a>
     <button class="menu-toggle" aria-expanded="false" aria-controls="nav">☰</button>
     <ul id="menu" class="menu">
-      <li><a href="#fragments.about">About</a></li>
-      <li><a href="#fragments.services">Services</a></li>
-      <li><a href="#fragments.gallery">Gallery</a></li>
-      <li><a href="#fragments.testimonials">Reviews</a></li>
-      <li class="btn"><a href="#fragments.contact">Request a Quote</a></li>
+      <li><a href="#fragments--about">About</a></li>
+      <li><a href="#fragments--services">Services</a></li>
+      <li><a href="#fragments--gallery">Gallery</a></li>
+      <li><a href="#fragments--testimonials">Reviews</a></li>
+      <li class="btn"><a href="#fragments--contact">Request a Quote</a></li>
       <li class="phone"><a href="tel:+1-000-000-0000">(000) 000-0000</a></li>
     </ul>
   </nav>
@@ -68,7 +68,7 @@ html {
   border-color: #fff;
 }
 
-.fragment--site-header nav ul.menu li.phone {
+.fragment--site-header nav ul.menu li.phone, .fragment--site-header nav ul.menu li.btn {
   background: #ffffff;
   border: 1px solid;
   border-radius: 3px;
@@ -80,6 +80,9 @@ html {
 
 /* mobile */
 @media (max-width: 768px) {
+  html {
+    scroll-padding-top: 70px;
+  }
   .fragment--site-header nav .menu-toggle {
     display: block;
   }
