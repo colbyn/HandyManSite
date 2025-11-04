@@ -2,75 +2,101 @@
     background: none;
     display: flex;
     flex-direction: column;
-    gap: 2px;
-}
-
-#fragments--services-overview > h2 {
-    background: var(--section-bg-gradient-primary-daytime);
-}
-
-#fragments--services-overview ul.horizontal-gallery {
-    list-style: none;
-    display: flex;
-    overflow-x: scroll;
-    gap: 10px;
+    gap: 1px;
     padding: 0;
 }
 
-#fragments--services-overview ul.horizontal-gallery > li {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    min-width: 500px;
-    min-height: 500px;
-    padding: 1rem;
-    background-repeat: no-repeat;
+#fragments--services-overview>h2 {
+    background: var(--section-bg-gradient-primary-daytime);
+}
+
+#fragments--services-overview .horizontal-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 4px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#fragments--services-overview .horizontal-gallery li {
+    position: relative;
+    aspect-ratio: 1 / 1;
     background-size: cover;
     background-position: center;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    color: #000;
     margin: 0;
 }
 
-#fragments--services-overview ul.horizontal-gallery > li > h3 {
+#fragments--services-overview .horizontal-gallery span.label {
+    width: 100%;
     text-align: center;
-    background: #ffffff8a;
+    background: #ffffffb3;
     backdrop-filter: blur(3px);
-    padding: 10px 0;
-    color: #ff0000;
+    padding: 8px;
+    margin: 0;
+    font-size: 1rem;
+    min-height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    font-family: var(--font-headline);
+    font-weight: 600;
+    line-height: 1.25;
+    margin: 0;
+    font-feature-settings: "liga" 1, "kern" 1, "ss02" 1; /* Optional stylistic set for flair */
+    font-variant-ligatures: common-ligatures;
 }
 
-#fragments--services-overview ul.horizontal-gallery > li.carpentry-woodwork {
+
+#fragments--services-overview .carpentry-woodwork {
     background-image: url(../assets/crop-person-screwing-door-hinge.jpeg);
 }
-#fragments--services-overview ul.horizontal-gallery > li.electrical {
+
+#fragments--services-overview .electrical {
     background-image: url(../assets/a-man-installing-a-light-bulb-640x427.jpeg);
 }
-#fragments--services-overview ul.horizontal-gallery > li.plumbing {
+
+#fragments--services-overview .plumbing {
     background-image: url(../assets/close-up-photo-of-a-shower-head-640x427.jpeg);
 }
-#fragments--services-overview ul.horizontal-gallery > li.painting-finishing {
+
+#fragments--services-overview .painting-finishing {
     background-image: url(../assets/person-holding-paint-roller-while-painting-the-wall-640x427.jpeg);
 }
-#fragments--services-overview ul.horizontal-gallery > li.flooring-tile-work {
+
+#fragments--services-overview .flooring-tile-work {
     background-image: url(../assets/papers-sponge-and-boxes-on-the-floor-640x427.jpeg);
 }
-#fragments--services-overview ul.horizontal-gallery > li.masonry-concrete {
+
+#fragments--services-overview .masonry-concrete {
     background-image: url(../assets/street-carpenter-working-with-tools-outdoors-640x427.jpeg);
 }
-#fragments--services-overview ul.horizontal-gallery > li.general-home-maintenance {
+
+#fragments--services-overview .general-home-maintenance {
     background-image: url(../assets/a-man-installing-a-light-bulb-640x427.jpeg);
 }
-#fragments--services-overview ul.horizontal-gallery > li.furniture-fixtures-mounting {
+
+#fragments--services-overview .furniture-fixtures-mounting {
     background-image: url(../assets/a-man-installing-a-light-bulb-640x427.jpeg);
 }
-#fragments--services-overview ul.horizontal-gallery > li.exterior-yard-structures {
+
+#fragments--services-overview .exterior-yard-structures {
     background-image: url(../assets/a-man-installing-a-light-bulb-640x427.jpeg);
 }
-#fragments--services-overview ul.horizontal-gallery > li.safety-accessibility-upgrades {
+
+#fragments--services-overview .safety-accessibility-upgrades {
     background-image: url(../assets/a-man-installing-a-light-bulb-640x427.jpeg);
 }
-#fragments--services-overview ul.horizontal-gallery > li.appliance-installation {
+
+#fragments--services-overview .appliance-installation {
     background-image: url(../assets/a-man-installing-a-light-bulb-640x427.jpeg);
 }
-#fragments--services-overview ul.horizontal-gallery > li.seasonal-specialized-services {
+
+#fragments--services-overview .seasonal-specialized-services {
     background-image: url(../assets/a-man-installing-a-light-bulb-640x427.jpeg);
 }
