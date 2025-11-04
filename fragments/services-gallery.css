@@ -1,0 +1,76 @@
+#fragments--services-overview {
+    background: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+#fragments--services-overview > h2 {
+    background: var(--section-bg-gradient-primary-daytime);
+}
+
+#fragments--services-overview ul.horizontal-gallery {
+    list-style: none;
+    display: flex;
+    overflow-x: scroll;
+    gap: 10px;
+    padding: 0;
+}
+
+#fragments--services-overview ul.horizontal-gallery > li {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-width: 500px;
+    min-height: 500px;
+    padding: 1rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+}
+
+#fragments--services-overview ul.horizontal-gallery > li > h3 {
+    text-align: center;
+    background: #ffffff8a;
+    backdrop-filter: blur(3px);
+    padding: 10px 0;
+    color: #ff0000;
+}
+
+#fragments--services-overview ul.horizontal-gallery > li.carpentry-woodwork {
+    background-image: url(../assets/crop-person-screwing-door-hinge.jpeg);
+}
+#fragments--services-overview ul.horizontal-gallery > li.electrical {
+    background-image: url(../assets/a-man-installing-a-light-bulb-640x427.jpeg);
+}
+#fragments--services-overview ul.horizontal-gallery > li.plumbing {
+    background-image: url(../assets/close-up-photo-of-a-shower-head-640x427.jpeg);
+}
+#fragments--services-overview ul.horizontal-gallery > li.painting-finishing {
+    background-image: url(../assets/person-holding-paint-roller-while-painting-the-wall-640x427.jpeg);
+}
+#fragments--services-overview ul.horizontal-gallery > li.flooring-tile-work {
+    background-image: url(../assets/papers-sponge-and-boxes-on-the-floor-640x427.jpeg);
+}
+#fragments--services-overview ul.horizontal-gallery > li.masonry-concrete {
+    background-image: url(../assets/street-carpenter-working-with-tools-outdoors-640x427.jpeg);
+}
+#fragments--services-overview ul.horizontal-gallery > li.general-home-maintenance {
+    background-image: url(../assets/a-man-installing-a-light-bulb-640x427.jpeg);
+}
+#fragments--services-overview ul.horizontal-gallery > li.furniture-fixtures-mounting {
+    background-image: url(../assets/a-man-installing-a-light-bulb-640x427.jpeg);
+}
+#fragments--services-overview ul.horizontal-gallery > li.exterior-yard-structures {
+    background-image: url(../assets/a-man-installing-a-light-bulb-640x427.jpeg);
+}
+#fragments--services-overview ul.horizontal-gallery > li.safety-accessibility-upgrades {
+    background-image: url(../assets/a-man-installing-a-light-bulb-640x427.jpeg);
+}
+#fragments--services-overview ul.horizontal-gallery > li.appliance-installation {
+    background-image: url(../assets/a-man-installing-a-light-bulb-640x427.jpeg);
+}
+#fragments--services-overview ul.horizontal-gallery > li.seasonal-specialized-services {
+    background-image: url(../assets/a-man-installing-a-light-bulb-640x427.jpeg);
+}
