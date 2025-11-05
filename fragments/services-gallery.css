@@ -7,7 +7,7 @@
 }
 
 #fragments--services-overview>h2 {
-    background: var(--section-bg-gradient-primary-daytime);
+    background: var(--section-bg-gradient-primary);
 }
 
 #fragments--services-overview .horizontal-gallery {
@@ -99,4 +99,15 @@
 
 #fragments--services-overview .seasonal-specialized-services {
     background-image: url(../assets/a-man-installing-a-light-bulb-640x427.jpeg);
+}
+
+
+@media screen and (prefers-color-scheme: dark) {
+    #fragments--services-overview .horizontal-gallery li {
+        color: #ffffff;
+    }
+
+    #fragments--services-overview .horizontal-gallery span.label {
+        background: #242424b3;
+    }
 }

@@ -39,3 +39,9 @@
 .fragments--site-footer .container a {
   color: inherit;
 }
+
+@media screen and (prefers-color-scheme: dark) {
+  .fragments--site-footer {
+    box-shadow: none;
+  }
+}

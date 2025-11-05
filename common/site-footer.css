@@ -1,43 +1,50 @@
 .fragments--site-footer {
-  background-image: url(../assets/flat-lay-shot-of-tools.jpeg);
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 50vh;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  padding: 10px;
+    background-image: url(../assets/flat-lay-shot-of-tools.jpeg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 50vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 10px;
 
-  margin: 10px;
-  margin-top: 0;
-  border: 1px solid #ffc700;
-  box-shadow: 0 0 5px 1px #777777;
-  border-radius: 0.5rem;
+    margin: 10px;
+    margin-top: 0;
+    border: 1px solid #ffc700;
+    box-shadow: 0 0 5px 1px #777777;
+    border-radius: 0.5rem;
 }
 
 
 .fragments--site-footer .container {
-  background: linear-gradient(to bottom, rgb(126 125 125 / 53%) 0%, rgb(14 14 14 / 60%) 100%);
-  backdrop-filter: blur(4px) contrast(.9);
-  color: #ffce00;
-  border: 1px solid #ffcc00;
-  border-radius: 3px;
-  padding: 10px;
-  width: 100%;
+    background: linear-gradient(to bottom, rgb(126 125 125 / 53%) 0%, rgb(14 14 14 / 60%) 100%);
+    backdrop-filter: blur(4px) contrast(.9);
+    color: #ffce00;
+    border: 1px solid #ffcc00;
+    border-radius: 3px;
+    padding: 10px;
+    width: 100%;
 }
 
-.fragments--site-footer .container h1, .fragments--site-footer .container p {
-  text-align: center;
+.fragments--site-footer .container h1,
+.fragments--site-footer .container p {
+    text-align: center;
 }
 
 .fragments--site-footer .container h1 {
-  font-weight: 500;
-  font-family: revert;
-  font-size: 2.2rem;
-  text-transform: uppercase;
+    font-weight: 500;
+    font-family: revert;
+    font-size: 2.2rem;
+    text-transform: uppercase;
 }
 
 .fragments--site-footer .container a {
-  color: inherit;
+    color: inherit;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+    .fragments--site-footer {
+        box-shadow: none;
+    }
 }

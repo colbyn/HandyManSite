@@ -134,7 +134,7 @@
     border-color: #000000;
     box-shadow: none;
   }
-  .fragment--site-header nav ul.menu li.phone {
+  .fragment--site-header nav ul.menu li.phone, .fragment--site-header nav ul.menu li.btn {
     background: #414141;
     box-shadow: none;
     border-color: #262626;
@@ -163,6 +163,14 @@
   ul.testimonial-list>li blockquote {
     color: #000;
   }
+  @media screen and (prefers-color-scheme: dark) {
+    ul.testimonial-list>li {
+      background: #2b2b2b5e;
+    }
+    ul.testimonial-list>li blockquote {
+      color: #ffffff;
+    }
+  }
   </style>
   <style>
   section.contact .contact-options {
@@ -177,6 +185,11 @@
   margin: 0;
   background: #ffffff5e;
   padding: 10px;
+  }
+  @media screen and (prefers-color-scheme: dark) {
+  section.contact .contact-options > * {
+    background: #4444445e;
+  }
   }
   </style>
 </head>

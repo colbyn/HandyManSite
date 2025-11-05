@@ -1,9 +1,22 @@
 :root {
-  /* PRIMARY */
-  --section-bg-gradient-primary-daytime: linear-gradient(180deg, rgb(146 233 252 / 28%) 0%, rgb(132 210 247 / 42%) 100%);
-  --section-bg-gradient-primary-nighttime: linear-gradient(180deg, rgb(57 66 68) 0%, rgb(44 45 52) 100%);
+    /* PRIMARY */
+    --section-bg-gradient-primary-daytime: linear-gradient(180deg, rgb(146 233 252 / 28%) 0%, rgb(132 210 247 / 42%) 100%);
+    --section-bg-gradient-primary-nighttime: #1c1c1c;
 
-  /* SECONDARY */
-  --section-bg-gradient-secondary-daytime: linear-gradient(180deg, rgb(49 251 125 / 18%) 0%, rgb(135 255 155 / 44%) 100%);
-  --section-bg-gradient-secondary-nighttime: linear-gradient(180deg, rgb(103 53 46) 0%, rgb(103 18 0) 100%);
+    /* SECONDARY */
+    --section-bg-gradient-secondary-daytime: linear-gradient(180deg, rgb(49 251 125 / 18%) 0%, rgb(135 255 155 / 44%) 100%);
+    --section-bg-gradient-secondary-nighttime: #1c1c1c;
+
+    --section-bg-gradient-primary: var(--section-bg-gradient-primary-daytime);
+    --section-bg-gradient-secondary: var(--section-bg-gradient-secondary-daytime);
+}
+
+@media screen and (prefers-color-scheme: dark) {
+    :root {
+        /* PRIMARY */
+        --section-bg-gradient-primary: var(--section-bg-gradient-primary-nighttime);
+
+        /* SECONDARY */
+        --section-bg-gradient-secondary: var(--section-bg-gradient-secondary-nighttime);
+    }
 }

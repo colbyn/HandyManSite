@@ -16,19 +16,16 @@ main>section>.container{
     padding: 20px 10px;
 }
 main>section:nth-child(even) {
-    background: var(--section-bg-gradient-secondary-daytime);
+    background: var(--section-bg-gradient-secondary);
 }
 
 main>section:nth-child(odd) {
-    background: var(--section-bg-gradient-primary-daytime);
+    background: var(--section-bg-gradient-primary);
 }
 
 @media screen and (prefers-color-scheme: dark) {
-    main>section:nth-child(even) {
-        background: var(--section-bg-gradient-secondary-daytime);
-    }
-
-    main>section:nth-child(odd) {
-        background: var(--section-bg-gradient-primary-daytime);
+    main>section > h2 {
+        border-color: #000000;
+        color: #c0c0c0;
     }
 }
