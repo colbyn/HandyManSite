@@ -13,10 +13,10 @@
 #hero .container {
     background: linear-gradient(to bottom, rgb(126 125 125 / 53%) 0%, rgb(14 14 14 / 60%) 100%);
     backdrop-filter: blur(4px) contrast(.9);
-    color: #ffce00;
+    color: #ffffff;
     padding: 10px;
-    border: 1px solid #ffcc00;
-    border-radius: 3px;
+    border: 1px solid #ffffff;
+    background: #5252528c;
 }
 
 #hero .container h1,
